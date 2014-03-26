@@ -66,3 +66,9 @@ post "/sessions" do
     erb :"sessions/new"
   end
 end
+
+delete "/sessions" do
+  flash[:notice] = "Goodbye!"
+  session[:user_id] = nil
+  redirect to("/")
+end
