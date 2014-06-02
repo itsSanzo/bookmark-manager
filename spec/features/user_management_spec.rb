@@ -1,4 +1,24 @@
 require 'spec_helper'
+require_relative 'helpers/session'
+
+include SessionHelpers
+
+feature "User sign out" do
+  before(:each) do
+    User.create(:email => "ceppa@leppa.com",
+                :password => "1234",
+                :password_confirmation => "1234")
+  end
+
+  scenario "while being signed in" do
+    sign_in("ceppa@leppa.com", "1234")
+    click_button "Sign out"
+    expect(page).to have_content("See you soon!")
+    expect(page).not_to have_content("Welcome, ceppa@leppa.com")
+  end
+
+end
+
 
 feature "User sign in" do
 
@@ -22,13 +42,6 @@ feature "User sign in" do
     expect(page).not_to have_content("Welcome, ceppa@leppa.com")
   end
 
-  def sign_in(email, password)
-    visit "/sessions/new"
-    fill_in "email", :with => email
-    fill_in "password", :with => password
-    click_button "Sign in"
-  end
-
 end
 
 
@@ -49,15 +62,5 @@ feature "User sign up" do
     lambda { sign_up }.should change(User, :count).by(1)
     lambda { sign_up }.should change(User, :count).by(0)
     expect(page).to have_content("This email is already taken")
-  end
-
-  def sign_up(email = "ciao@ciao.com",
-              password = "12345678",
-              password_confirmation = "12345678")
-    visit '/users/new'
-    fill_in :email, :with => email
-    fill_in :password, :with => password
-    fill_in :password_confirmation, :with => password_confirmation
-    click_button "Sign up"
   end
 end
