@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'data_mapper'
+require 'rack-flash'
 require './lib/link'
 require './lib/tag'
 require './lib/user'
@@ -9,6 +10,7 @@ require_relative 'data_mapper_setup'
 
 enable :sessions
 set :session_secret, 'super secret pass!!!'
+use Rack::Flash
 
 
 get "/" do
@@ -33,13 +35,19 @@ get "/tags/:text" do
 end
 
 get "/users/new" do
+  @user = User.new
   erb :"users/new"
 end
 
 post "/users" do
-  user = User.create(:email => params[:email],
+  @user = User.create(:email => params[:email],
               :password => params[:password],
               :password_confirmation => params[:password_confirmation])
-  session[:user_id] = user.id
-  redirect to("/")
+  if @user.save
+    session[:user_id] = @user.id
+    redirect to("/")
+  else
+    flash[:notice] = "Sorry, your passwords don't match"
+    erb :"users/new"
+  end
 end
