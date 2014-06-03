@@ -1,4 +1,4 @@
-get "/" do
-  @links = Link.all	
+get "/" do 
+  @links = Link.all
   erb :index
 end

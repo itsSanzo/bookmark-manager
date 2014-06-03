@@ -17,5 +17,6 @@ require_relative 'controllers/sessions'
 
 enable :sessions
 set :session_secret, 'super secret pass!!!'
+
 use Rack::Flash
 set :partial_template_engine, :erb
