@@ -21,6 +21,7 @@ header {
   display: flex;
 	padding: 0px 25px;
   font-family: "Varela Round";
+  margin-bottom: 15px;
 }
 
 header .logo {
@@ -69,4 +70,38 @@ header .user-links {
 input, form {
   display: inline-block;
   border: 0px;
+}
+
+.container {
+  width: 100%;
+  color: #241f18;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.welcome-bar {
+  width: 535px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: "Varela Round";
+  font-size: 22px;
+}
+
+.welcome-bar .add-link {
+  background: #8ecea5;
+}
+.welcome-bar .add-link:hover {
+  background: #70af87;
+}
+
+.wb-right {
+  float: right;
+}
+.wb-left {
+  float: left;
+   padding-top: 4px;
+}
+
+.clearfix {
+  clear: both;
 }

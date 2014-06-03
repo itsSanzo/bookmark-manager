@@ -1,4 +1,12 @@
-<h1>Welcome to the Bookmark manager!</h1>
+<div class="container">
+  <div class="welcome-bar">
+
+  <div class="wb-left">Welcome to the Bookmark manager!</div>
+  <div class="wb-right">
+    <a href="/links/new" class="button add-link">Add a new link</a>
+  </div>
+  <div class="clearfix"></div>
+  </div>
 
 Current links:
 
@@ -8,11 +16,4 @@ Current links:
   <% end %>
 </ul>
 
-<div id="new-link">
-  <form action="/links" method="post">
-    url: <input type="text" name="url">
-    title: <input type="text" name="title">
-    tags: <input type="text" name="tags">
-    <input type="submit" value="Add link">
-  </form>
 </div>
