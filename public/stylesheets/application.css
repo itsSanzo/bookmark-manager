@@ -1,3 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600,700,800);
+
 body {
-	background: palegreen;
+	background: #fff4f4;
+}
+
+header {
+	height: 60px;
+	width: 100%;
+	background: url(/images/bg.png);
+	color: #fff4f4;
+	display: flex;
+	padding: 0px 25px;
+}
+
+header .logo {
+	display: flex;
+  margin: auto 0px;
+  font-family: "Varela Round";
+  font-size: 30px;
 }
