@@ -1,19 +1,21 @@
 <div class="container">
   <div class="welcome-bar">
 
-  <div class="wb-left">Welcome to the Bookmark manager!</div>
-  <div class="wb-right">
-    <a href="/links/new" class="button add-link">Add a new link</a>
-  </div>
-  <div class="clearfix"></div>
+    <div class="wb-left">Welcome to the Bookmark manager!</div>
+    <div class="wb-right">
+      <a href="/links/new" class="button add-link">Add a new link</a>
+    </div>
+    <div class="clearfix"></div>
   </div>
 
-Current links:
 
-<ul>
   <% @links.each do |link| %>
-  	<li><a href="<%= link.url %>"><%= link.title %></a></li>
+  	<div class="link-box">
+    
+    <div class="link-title"><a href="<%= link.url %>"><%= link.title %></a></div>
+      <div class="link-description">Sed sed mattis ipsum. Duis tincidunt vel dui dictum auctor. Nullam elit nunc, dignissim eu scelerisque vitae, euismod vel augue. Mauris rhoncus arcu non est condimentum, vitae aliquam purus pretium. Cras facilisis rhoncus diam. Cras porta tristique massa sed facilisis. Nullam elit nunc, dignissim eu scelerisque.</div>
+      <div class="link-source">added by <a href="#">hi@sanzo.com</a></div>
+    </div>
   <% end %>
-</ul>
 
 </div>

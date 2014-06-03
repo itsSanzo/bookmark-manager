@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600,700,800);
 
+html, body {
+  height: 100%;
+    min-height: 100%;
+}
+
 body {
 	background: #fff4f4;
 }
@@ -13,7 +18,7 @@ a:hover {
 }
 
 header {
-	height: 60px;
+	height: 70px;
 	width: 100%;
 	background: url(/images/bg.png);
 	color: #fff4f4;
@@ -73,10 +78,12 @@ input, form {
 }
 
 .container {
-  width: 100%;
+  margin: 0px auto;
+  padding: 0px 25px;
   color: #241f18;
   font-family: "Open Sans";
   font-weight: 400;
+
 }
 
 .welcome-bar {
@@ -105,3 +112,88 @@ input, form {
 .clearfix {
   clear: both;
 }
+
+.link-box {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Open Sans";
+}
+
+.link-title {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.link-title a {
+  color: #fe6700;
+}
+
+.link-title a:hover {
+  color: #f79900;
+}
+
+.link-description {
+  margin-bottom: 10px;
+}
+
+.link-source {
+  text-align: right;
+}
+
+.link-source a {
+  color: #8ecea5;
+}
+
+.link-source a:hover {
+  color: #70af87;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background: url(/images/bg.png);
+  height: 70px;
+  margin: 0px;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0px;
+  font-family: "Varela Round";
+  color: #fff4f4;
+  font-size: 14px;
+    -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  width: 100%;
+}
+ 
+footer a {
+  color: #8ecea5;
+}
+
+footer a:hover {
+  color: #70af87;
+}
+
+footer > * {
+  margin: auto inherit;
+}
+
+footer img {
+  vertical-align: top;
+}
+
+footer .ma-logo {
+  width: 369px;
+  margin-right: 25px;
+}
+
+footer .footer-text {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+footer p {
+  padding: 3px;
+}
+
