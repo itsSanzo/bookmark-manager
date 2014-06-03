@@ -1,0 +1,36 @@
+.link-box {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Open Sans";
+}
+
+.link-title {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.link-title a {
+  color: #fe6700;
+}
+
+.link-title a:hover {
+  color: #f79900;
+}
+
+.link-description {
+  margin-bottom: 10px;
+}
+
+.link-source {
+  text-align: right;
+}
+
+.link-source a {
+  color: #8ecea5;
+}
+
+.link-source a:hover {
+  color: #70af87;
+}

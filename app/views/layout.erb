@@ -8,8 +8,12 @@
 
 <body>
   <%= partial :header %>
-  <%= partial :flash %>
-  <%= yield %>
-  <%= partial :footer %>
+
+  <div class="container">
+    <%= partial :flash %>
+    <%= yield %>
+  </div>
+    <%= partial :footer %>
+  
 </body>
 </html>

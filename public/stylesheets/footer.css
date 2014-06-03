@@ -1,0 +1,46 @@
+footer {
+  position: relative;
+  bottom: 0;
+  background: url(/images/bg.png);
+  height: 70px;
+  margin: 0px;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0px;
+  font-family: "Varela Round";
+  color: #fff4f4;
+  font-size: 14px;
+    -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  width: 100%;
+}
+ 
+footer a {
+  color: #8ecea5;
+}
+
+footer a:hover {
+  color: #70af87;
+}
+
+footer > * {
+  margin: auto inherit;
+}
+
+footer img {
+  vertical-align: top;
+}
+
+footer .ma-logo {
+  width: 369px;
+  margin-right: 25px;
+}
+
+footer .footer-text {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+footer p {
+  padding: 3px;
+}

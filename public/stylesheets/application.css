@@ -1,199 +1,41 @@
-@import url(http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600);
 
-html, body {
-  height: 100%;
-    min-height: 100%;
-}
+@import "body.css";
+@import "header.css";
+@import "links.css";
+@import "footer.css";
 
-body {
-	background: #fff4f4;
-}
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-
-}
-
-header {
-	height: 70px;
-	width: 100%;
-	background: url(/images/bg.png);
-	color: #fff4f4;
-	display: -webkit-flex;
-  display: flex;
-	padding: 0px 25px;
-  font-family: "Varela Round";
-  margin-bottom: 15px;
-}
-
-header .logo {
+.new-link {
   width: 300px;
-  margin: auto 0px;
-  font-size: 30px;
+  min-height: 100%!important;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 25px;
 }
 
-header .user-links {
-  -webkit-flex: 1;
-  flex: 1;
-  margin: auto 50px;
-  padding: 0px;
-  text-align: right;
-}
-
-.button, .sign-out .button {
-  display: inline-block;
-  background: #fe6700;
-  color: #fff4f4;
-  padding: 7px 15px;
-  border-radius: 25px;
-  margin: auto 0px auto 5px;
-  /* text-shadow: 0px 0px 5px rgba(108, 53, 16, 0.5); */
-  font-size: 16px;
-  font-family: "Varela Round"
-}
-
-.button:hover, .sign-out .button:hover {
-  background: #f79900;
-  cursor: pointer;
-}
-
-.welcome-msg {
-  font-size: 18px;
-  display: inline-block;
-  -webkit-font-smoothing:antialiased;
-  font-smoothing:antialiased;
-  padding-right: 5px;
-}
-
-.button a {
-  text-decoration: none;
-}
-
-input, form {
-  display: inline-block;
-  border: 0px;
-}
-
-.container {
-  margin: 0px auto;
-  padding: 0px 25px;
-  color: #241f18;
-  font-family: "Open Sans";
-  font-weight: 400;
-
-}
-
-.welcome-bar {
-  width: 535px;
-  margin: 20px auto;
-  text-align: center;
+.form-title {
+  color: #fe6700;
   font-family: "Varela Round";
-  font-size: 22px;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.welcome-bar .add-link {
+.nice-inputs input {
+  background: #b0aba4;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.nice-inputs p {
+  margin-bottom: 20px;
+}
+
+.nice-inputs .button {
+  padding: 7px 15px;
   background: #8ecea5;
 }
-.welcome-bar .add-link:hover {
-  background: #70af87;
-}
-
-.wb-right {
-  float: right;
-}
-.wb-left {
-  float: left;
-   padding-top: 4px;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.link-box {
-  background: #ffffff;
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  font-family: "Open Sans";
-}
-
-.link-title {
-  margin-bottom: 10px;
-  font-size: 26px;
-}
-
-.link-title a {
-  color: #fe6700;
-}
-
-.link-title a:hover {
-  color: #f79900;
-}
-
-.link-description {
-  margin-bottom: 10px;
-}
-
-.link-source {
-  text-align: right;
-}
-
-.link-source a {
-  color: #8ecea5;
-}
-
-.link-source a:hover {
-  color: #70af87;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  background: url(/images/bg.png);
-  height: 70px;
-  margin: 0px;
-  display: -webkit-flex;
-  display: flex;
-  padding: 0px;
-  font-family: "Varela Round";
-  color: #fff4f4;
-  font-size: 14px;
-    -webkit-font-smoothing:antialiased;
-  font-smoothing:antialiased;
-  width: 100%;
-}
- 
-footer a {
-  color: #8ecea5;
-}
-
-footer a:hover {
-  color: #70af87;
-}
-
-footer > * {
-  margin: auto inherit;
-}
-
-footer img {
-  vertical-align: top;
-}
-
-footer .ma-logo {
-  width: 369px;
-  margin-right: 25px;
-}
-
-footer .footer-text {
-  -webkit-flex: 1;
-  flex: 1;
-}
-
-footer p {
-  padding: 3px;
-}
-

@@ -1,8 +1,12 @@
-<div class="new-link">
+<div class="new-link nice-inputs">
+  <div class="form-title">
+    Add a new link
+  </div>
+
   <form action="/links" method="post">
-    url: <input type="text" name="url">
-    title: <input type="text" name="title">
-    tags: <input type="text" name="tags">
-    <input type="submit" value="Add link">
+    <p><input type="text" name="url" value="url"></p>
+    <p><input type="text" name="title" value="title"></p>
+    <p><input type="text" name="tags" value="tags"></p>
+    <input class="button" type="submit" value="Add link">
   </form>
 </div>
